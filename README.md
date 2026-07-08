@@ -100,7 +100,7 @@ researchmind-ai/
 │   ├── Dockerfile            # Frontend container definition
 │   └── tailwind.config.ts    # Tailwind styling configuration
 ├── docker-compose.yml        # Multi-container orchestration
-└── .env.example              # Example environment variables
+└── .env.secrets.example      # Example environment variables
 ```
 
 ---
@@ -120,9 +120,9 @@ You need to set up environment variables for both the backend and frontend.
 
 **Backend:**
 ```bash
-cp backend/.env.example backend/.env
+cp backend/.env.example .env.secrets
 ```
-Edit `/.env` and insert your Google Gemini API key:
+Edit `.env.secrets` and insert your Google Gemini API key:
 ```env
 GEMINI_API_KEY=your_gemini_api_key_here
 ```
@@ -148,7 +148,7 @@ docker compose up --build -d
 
 ## 🔐 Environment Variables
 
-### Backend (`backend/.env`)
+### Backend (`.env.secrets`)
 | Variable | Description | Example / Default |
 |----------|-------------|-------------------|
 | `GEMINI_API_KEY` | **Required.** Your Google Gemini API key used for RAG generation. | `AIzaSy...` |
