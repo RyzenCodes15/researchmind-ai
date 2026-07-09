@@ -1,6 +1,6 @@
 # ResearchMind AI 🧠
 
-ResearchMind AI is an open-source, production-ready Retrieval-Augmented Generation (RAG) application. It allows you to upload PDF documents, intelligently chunk and embed their contents, and interact with an AI assistant grounded exclusively in your uploaded research. 
+ResearchMind AI is an open-source and production-ready Retrieval-Augmented Generation (RAG) application. It allows you to upload PDF documents, intelligently chunk and embed their contents, and interact with an AI assistant grounded exclusively in your uploaded research. 
 
 Every response includes direct citations, pointing exactly to the source document and page number.
 
